@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Count Number</title>
+</head>
+<body>
+    <h1 class="head">SỐ THỨ TỰ</h1>
+    <p id="num">0</p>
+    <div class="button_group">
+        <button class="btnStart" id="btn" onclick="Tang()">TĂNG</button>
+        <button class="btnStop" id="btn" onclick="Giam()">GIẢM</button>
+        <button class="btnReset" id="btn" onclick="Reset()">RESET</button>
+    </div>
+</body>
+<script>
+    let num_view = 0;
+    function Tang(){
+        document.getElementById("num").innerHTML = num_view++;
+        document.getElementById("num").innerHTML=num_view;
+    }
+    function Giam(){
+      
+        document.getElementById("num").innerHTML = num_view--;
+        document.getElementById("num").innerHTML=num_view;
+    }
+    function Reset(){
+        document.getElementById("num").innerHTML = 0;
+        num_view=0;
+    }
+
+</script>
+</html>
